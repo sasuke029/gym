@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="{%static 'css/base.css'%}">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#"><img src="{%static 'media/logo.jpg'%}" alt="Logo"></a>
+        </div>
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Latest Job</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">
+                    <img src="profile_image.jpg" class="profile-image">
+                   
+                </a>
+                <div class="dropdown-content">
+                    <a href="#">My Profile</a>
+                    <a href="signin/">Logout</a>
+                </div>
+            </li>
+            <li><a href="#">My Network</a></li>
+        
+        <li class="search">
+            <form action="#" method="GET">
+                <input type="text" name="search" placeholder="Search...">
+                <button type="submit">Search</button>
+            </form>
+        </li>
+    </ul>
+    </nav>
+</body>
+</html>
+
+
